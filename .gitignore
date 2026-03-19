@@ -1,0 +1,10 @@
+*.dta
+*.gph
+*.log
+*.smcl
+*.rtf
+*.doc
+*.docx
+*.xls
+*.xlsx
+.DS_Store
