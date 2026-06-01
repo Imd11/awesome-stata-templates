@@ -8,6 +8,22 @@ A comprehensive, ready-to-use collection of Stata code templates for empirical e
 
 This repository provides full-pipeline code snippets covering everything from basic data management and descriptive statistics to advanced causal inference models (PSM-DID, RDD, SCM) and spatial econometrics. 
 
+## 🎯 Project Scope
+
+This project is designed for researchers, students, and analysts who use Stata for empirical research and want reusable templates for common research workflows.
+
+It focuses on practical, copy-paste friendly examples for:
+
+* organizing and cleaning research data;
+* running baseline and extended regression models;
+* conducting robustness, heterogeneity, endogeneity, and mechanism checks;
+* applying common empirical methods such as PSM-DID and synthetic control;
+* exporting tables and automating repetitive Stata tasks.
+
+This repository is **not** a compiled Stata package or a substitute for method-specific econometrics documentation. Users should adapt each template to their own data, research design, and reporting standards.
+
+For the current maintenance direction, see [`ROADMAP.md`](ROADMAP.md).
+
 ## 📑 Repository Structure
 
 The code is organized logically following a standard empirical research workflow:
