@@ -2,7 +2,7 @@
 
 Organize area names
 
-```javascript
+```stata
 use digital inclusive finance, clear
 keep Province Region Year Digital Financial Inclusion Index
 replace region="Beijing City" if province=="Beijing City"

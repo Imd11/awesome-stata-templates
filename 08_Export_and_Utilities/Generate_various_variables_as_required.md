@@ -2,7 +2,7 @@
 
 stata generates a variable and randomly sets it to 1-30
 
-```javascript
+```stata
 gen newvar = floor(30*uniform()) + 1
 ```
 

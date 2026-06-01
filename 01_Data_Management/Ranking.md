@@ -1,6 +1,6 @@
 # Ranking
 
-```javascript
+```stata
 egen ranking = rank(-total score), unique
 bysort total score: egen total score ranking=min(ranking)//  highest score ranking
 sort total score
@@ -8,7 +8,7 @@ sort total score
 
 Small method:
 
-```javascript
+```stata
 gsort -var
 gen ranking=_n
 ```
@@ -19,7 +19,7 @@ gen ranking=_n
 
 For multi-variable loops:
 
-```javascript
+```stata
 foreach v of varlist total score-h5 score{
 egen `v'_prerank=rank(-`v'), unique
 bysort `v' : egen `v' ranking=min(`v'_pre-ranking)//  highest score ranking
@@ -29,7 +29,7 @@ drop `v'_preranking
 
 
 
-```javascript
+```stata
 gsort -k l // The data is arranged in descending order by k and ascending order by l
 ```
 

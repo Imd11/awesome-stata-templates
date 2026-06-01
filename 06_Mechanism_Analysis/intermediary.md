@@ -1,6 +1,6 @@
 # intermediary
 
-```javascript
+```stata
 areg TFPCH did  $z  i.year , absorb(stock_id) r
 est store zhongjie31
 areg h TFPCH did  $z  i.year , absorb(stock_id) r
@@ -12,7 +12,7 @@ esttab zhongjie* using "Table-Mediation Effect Test.rtf", r2 obslast nogaps drop
 
 
 
-```javascript
+```stata
 *sobel test
 tab year, gen(year0)
 tab stock_id, gen(stock_id0)
@@ -23,7 +23,7 @@ sgmediation h , iv( did ) mv( TFPCH ) cv($z year01-year012 stock_id01-stock_id03
 
 
 
-```javascript
+```stata
 bootstrap r(ind_eff) r(dir_eff), reps(500) : sgmediation h, mv(TECH) iv(did) cv($z)
 ```
 

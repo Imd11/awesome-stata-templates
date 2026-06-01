@@ -86,7 +86,7 @@ Group according to event ID and subject party, and merge ipc classification numb
 
 Code:
 
-```diff
+```stata
 egen groupvar = group(event ID target party)
 replace IPC classification number=IPC classification number+"/"+IPC classification number[_n-1] if groupvar==groupvar[_n-1]
 drop if groupvar==groupvar[_n+1]

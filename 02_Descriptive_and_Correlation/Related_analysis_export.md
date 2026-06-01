@@ -1,6 +1,6 @@
 # Related analysis export
 
-```diff
+```stata
 *Relevance table
 use panel, clear
 estpost correlate y x $z ,matrix
@@ -13,7 +13,7 @@ graph matrix y x $z,scheme(s1mono) msize(tiny) mcolor(black)
 regression analysis
 
 
-```diff
+```stata
 
 reg Willingness to participate Age Education level Cognition of low-carbon life Low-carbon behavior Promotion difficulties Related measures
 est sto reg

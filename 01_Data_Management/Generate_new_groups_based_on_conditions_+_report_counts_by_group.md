@@ -2,7 +2,7 @@
 
 1. Use stata for data processing and report the H02 situation of various industries. H02 is divided into these groups according to numbers: 0, 1-4, 5-7, 8-19, 20-30, 31-50, 51 and above. Report the counting status of each industry and each H02
 
-```javascript
+```stata
 gen group =.
 replace group = 1 if H02 == 0
 replace group = 2 if inrange(H02, 1, 4)
@@ -16,7 +16,7 @@ tabulate industry_final group // Perform tabulate statistics on industries and g
 
 Running results:
 
-```javascript
+```stata
 
 
 Judgment based on information from multiple parties |

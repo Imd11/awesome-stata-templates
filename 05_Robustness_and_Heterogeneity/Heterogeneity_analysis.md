@@ -1,6 +1,6 @@
 #Heterogeneity analysis
 
-```diff
+```stata
 
 **Heterogeneity
 use panel3, clear
@@ -22,7 +22,7 @@ esttab heterogeneity* using table-heterogeneity analysis-region.rtf, r2 obslast 
 
 ### Cluster analysis in heterogeneity analysis
 
-```javascript
+```stata
 *Heterogeneity in economic development levels
 use test malm, clear
 collapse (mean) GDP per capita yuan, by (city)//  Average value of each region in panel data

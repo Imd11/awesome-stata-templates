@@ -4,7 +4,7 @@ Generate data:
 The order of task completion time is Platform 4＜Platform 3＜Platform 2＜Platform 1; the order of screen dizziness score is Platform 4＜Platform 3＜Platform 1＜Platform 2; the order of space disorientation score is Platform 3＜Platform 4＜Platform 2＜Platform 1;
 The stronger the spatial ability, the smaller the difference between groups in task completion time on different test platforms; the higher the familiarity with VR, the smaller the difference between groups in task completion time on different test platforms.
 
-```javascript
+```stata
 *Clear data
 clear
 

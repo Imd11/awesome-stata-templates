@@ -1,6 +1,6 @@
 # PSM-DID
 
-```r
+```stata
 ***************Core matching
 use "D:\000Alternate Desktop\Sino-German Intelligent Manufacturing\Data\panel\panel_ate",clear
 xtset stock_id year
@@ -58,7 +58,7 @@ esttab psm* using "D:\000substitute desktop\Sino-German Intelligent Manufacturin
 
 # Match year by year
 
-```diff
+```stata
 *****************************psm-did********************
 ***Variable description
 *$x: Global temporary element representing covariates

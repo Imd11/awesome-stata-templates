@@ -2,7 +2,7 @@
 
 **Child Page:** Company-Code
 
-```javascript
+```stata
 
 ***********************
 use panel, clear
@@ -112,7 +112,7 @@ graph matrix y x $z ,scheme(s1mono) msize(tiny) mcolor(black)
 
 ```
 
-```javascript
+```stata
 *Descriptive analysis
 use panel, clear
 logout, save (table - descriptive statistics) word replace: tabstat y

@@ -1,6 +1,6 @@
 # Time series code learning
 
-```javascript
+```stata
 * Period-by-period growth calculation: ai-a(i-1) (ie: an − a(n-1))
 gen  zg_GDP   =GDP[_n]   - GDP[_n-1]	
 gen  zg_EYTP  =EYTP[_n]  - EYTP[_n-1]	

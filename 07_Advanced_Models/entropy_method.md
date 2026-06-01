@@ -1,6 +1,6 @@
 # Entropy method
 
-```javascript
+```stata
 **********************Define the entropy value program************************
 capture program drop shangzhi
 program shangzhi
@@ -76,7 +76,7 @@ save "D:\000My Office Area\Master's Graduation\Thesis\Data-Original\panel\panel_
 
 multivariable
 
-```diff
+```stata
 *****************Main program*************
 
 *【1】Find `var'_g

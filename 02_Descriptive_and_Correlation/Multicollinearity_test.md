@@ -10,7 +10,7 @@ Table 4.3 Multicollinearity test
 
 
 
-```javascript
+```stata
 reg y $z 
 estat vif
 ```

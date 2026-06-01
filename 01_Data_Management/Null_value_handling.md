@@ -16,14 +16,14 @@ R&D funds R&D personnel R&D headcount
 
 If you cannot clean it directly, you can consider creating a new numerical variable to store the numerical information of "R&D personnel". For example:
 
-```javascript
+```stata
 gen R&D number = real (R&D personnel)
 The real() function attempts to convert character variables to numeric types.
 ```
 
 Finally try again
 
-```javascript
+```stata
 replace R&D headcount=0 if missing(R&D headcount)
 ```
 

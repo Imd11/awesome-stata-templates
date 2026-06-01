@@ -1,6 +1,6 @@
 # Baseline regression
 
-```javascript
+```stata
 use panel, clear  
 xtreg y x  i.year ,fe r
 est sto xtreg1

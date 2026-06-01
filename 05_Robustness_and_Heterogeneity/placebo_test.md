@@ -1,6 +1,6 @@
 # placebo test
 
-```diff
+```stata
 **Individual-time dimension
 use panel, clear
 cap erase "simulations.dta"
@@ -25,7 +25,7 @@ ytitle(`"{fontface "宋体": probability density}"', size(*1)) ylabel(, nogrid f
 
 
 
-```r
+```stata
 *-Placebo test 1
 *-Randomly generate treatment groups-individual dimension
 use panel,clear

@@ -1,6 +1,6 @@
 # Correlation analysis and export
 
-```javascript
+```stata
 ***Correlation and result export
 use data, clear
 estpost correlate Liquidity Fin Lev Size ROA Top10 share,matrix

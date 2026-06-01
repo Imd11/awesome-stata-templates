@@ -6,7 +6,7 @@
 
 
 
-```javascript
+```stata
 use data, clear
 *Test of sphericity
 factortest X1-X12
