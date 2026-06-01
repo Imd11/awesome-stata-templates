@@ -1,0 +1,38 @@
+name: Bug report
+description: Report an unclear, broken, or misleading Stata template.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the template collection. Please include enough detail for maintainers to reproduce or review the issue.
+  - type: input
+    id: template_path
+    attributes:
+      label: Template path
+      description: Which file is affected?
+      placeholder: "03_Basic_Regression/baseline_regression.md"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is unclear, broken, or misleading?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior or correction
+      description: What should the template say or do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Research context
+      description: Optional context about your data structure, method, or Stata version.
+    validations:
+      required: false
