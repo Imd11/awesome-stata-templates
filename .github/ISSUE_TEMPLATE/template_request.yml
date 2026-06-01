@@ -1,0 +1,35 @@
+name: Template request
+description: Request a new Stata template or empirical workflow.
+title: "[Template request]: "
+labels: ["template-request"]
+body:
+  - type: input
+    id: method
+    attributes:
+      label: Method or workflow
+      description: What Stata method or empirical workflow do you need?
+      placeholder: "Event study DID, panel fixed effects, table export, etc."
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Research use case
+      description: Describe when this template would be used.
+    validations:
+      required: true
+  - type: textarea
+    id: variables
+    attributes:
+      label: Expected variables
+      description: List likely variables or placeholders needed by the template.
+      placeholder: "y, x, controls, id, time, treat, post"
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: References or examples
+      description: Link to relevant Stata documentation, packages, papers, or examples.
+    validations:
+      required: false
