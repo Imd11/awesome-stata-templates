@@ -8,6 +8,13 @@ A comprehensive, ready-to-use collection of Stata code templates for empirical e
 
 This repository provides full-pipeline code snippets covering everything from basic data management and descriptive statistics to advanced causal inference models (PSM-DID, RDD, SCM) and spatial econometrics. 
 
+## Quick Links
+
+- [Template index](docs/TEMPLATE_INDEX.md) - file-by-file map of available templates
+- [Contribution guidelines](CONTRIBUTING.md) - how to add or improve a template
+- [Roadmap](ROADMAP.md) - current maintenance direction
+- [Maintenance audit](docs/MAINTENANCE_AUDIT.md) - repository status and maintenance gaps
+
 ## 🎯 Project Scope
 
 This project is designed for researchers, students, and analysts who use Stata for empirical research and want reusable templates for common research workflows.
@@ -43,13 +50,15 @@ For a file-by-file map of available templates, see [`docs/TEMPLATE_INDEX.md`](do
 
 All files are provided in Markdown (`.md`) format with `stata` code blocks. This makes it extremely easy to read the explanations directly on GitHub and copy-paste the code snippets into your Stata `.do` files.
 
-1. Browse the folders to find the specific econometric method or data processing trick you need.
-2. Copy the code block.
-3. Replace the placeholder variable names (e.g., `y`, `x`, `Control_Variables`) with your actual dataset variables.
+1. Start from the [template index](docs/TEMPLATE_INDEX.md) or browse the workflow folders.
+2. Open the template that matches your method or data task.
+3. Copy the Stata code block into your `.do` file.
+4. Replace placeholder variable names such as `y`, `x`, `controls`, `id`, and `time` with your project variables.
+5. Check whether the template requires community-contributed commands such as `reghdfe`, `winsor2`, `psmatch2`, `esttab`, or `outreg2`.
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have a highly efficient Stata snippet or a new econometric model template, feel free to open a Pull Request.
+Contributions are welcome. Before opening a pull request, please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingStataCode`)
