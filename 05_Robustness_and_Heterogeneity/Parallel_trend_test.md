@@ -1,6 +1,6 @@
 # Parallel trend test
 
-```r
+```stata
 use "D:\000Alternate Desktop\Sino-German Intelligent Manufacturing\Data\panel\panel_malm",clear
 xtset stock_id year
 winsor2 h size grow pay age cash lev roe indratio dual numb wg, replace cuts(1 99)

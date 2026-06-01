@@ -1,6 +1,6 @@
 # Synthetic control SCM
 
-```diff
+```stata
 *Synthetic control method
 *synth h Lev ROA ROE NetProfit Liquid Quick Cashflow INV Growth AssetGrowth // /
 h(2014) h(2015) h(2016) h(2017) h(2018), trunit(35) trperiod(2019) xperiod(2014(1)2018) // /
@@ -17,7 +17,7 @@ line effect _time, xline(2019,lp(dash)) yline(0,lp(dash)) graphregion(fcolor(whi
 
 The basic syntax format of synth is as follows:
 
-```diff
+```stata
 synth depvar predictorvars(x1 x2 x3) , trunit(#) trperiod(#)   // /
    [ counit(numlist) xperiod(numlist) mspeperiod()  // /
    resultsperiod() nested allopt unitnames(varname) // /
@@ -40,7 +40,7 @@ The specific explanation is as follows:
 
 Background: In November 1988, California passed the largest anti-tobacco legislation in the United States in contemporary times, and it came into effect in January 1989. The law raised California's cigarette excise tax by 25 cents per pack, earmarked the proceeds for tobacco control education and media campaigns, and triggered a series of local clean indoor-air ordinances, such as bans on smoking in restaurants and enclosed workplaces. Abadie et al. (2010) used the synthetic control method to study the effect of California's 1988 Tobacco Control Law No. 99 (Proposition 99) based on interstate panel data from 1970 to 2000 in the United States.
 
-```diff
+```stata
 . sysuse smoking (open data set)
 . xtset state year (set to panel data)
 . synth cigsale retprice lnincome age15to24 beer  // /

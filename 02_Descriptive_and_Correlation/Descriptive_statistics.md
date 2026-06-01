@@ -2,7 +2,7 @@
 
 Export of common descriptive analysis results:
 
-```javascript
+```stata
 *Descriptive statistics
 use data, clear
 logout, save(table-descriptive statistics) word replace: tabstat density0 lngdp, by(treat) statistics(mean sd min max count)
@@ -10,7 +10,7 @@ logout, save(table-descriptive statistics) word replace: tabstat density0 lngdp,
 
 
 
-```javascript
+```stata
 **Descriptive statistics
 use data, clear
 keep TFP_LP Supply Chain Finance Level SOE Lev Growth Board Top1 FirmAge

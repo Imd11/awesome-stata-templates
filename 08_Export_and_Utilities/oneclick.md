@@ -1,6 +1,6 @@
 # oneclick
 
-```diff
+```stata
 oneclick y Size Lev ROA ROE  NetProfit , fix(x i.year) p(0.01) m(xtreg) o(fe r)
 ```
 
@@ -8,7 +8,7 @@ oneclick y Size Lev ROA ROE  NetProfit , fix(x i.year) p(0.01) m(xtreg) o(fe r)
 
 
 
-```javascript
+```stata
 collapse (mean) industrial structure 2 x, by (year)//  Panel data average for each year
 
 tw (line x year, lpattern(solid)) (line industrial structure 2 year, lpattern(dash))
@@ -18,7 +18,7 @@ tw (line x year, lpattern(solid)) (line industrial structure 2 year, lpattern(da
 
 
 
-```javascript
+```stata
 use data1, clear
 
 oneclick y Level of economic agglomeration Level of economic development Level of foreign investment Level of urbanization Infrastructure Degree of opening to the outside world Market size 1 Level of marketization Employment structure Ten thousand employees, fix(lnx i.year) p(0.05) m(xtreg) o(fe r)

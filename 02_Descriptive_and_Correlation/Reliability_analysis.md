@@ -2,7 +2,7 @@
 
 Reliability analysis (Cronbach's Alpha)
 
-```javascript
+```stata
 alpha var1 var2 var3
 ```
 

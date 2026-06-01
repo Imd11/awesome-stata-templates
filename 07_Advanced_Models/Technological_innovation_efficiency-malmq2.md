@@ -1,6 +1,6 @@
 #Technological innovation efficiency-malmq2
 
-```javascript
+```stata
 **********************************Technological Innovation Efficiency******************************************
 use panel_h, clear
 sort stock_id year
@@ -10,7 +10,7 @@ malmq2 rd rd_inco caprd rder rder_pr = patent mbi lev , dmu(stock_id) saving(mal
 
 ```
 
-```javascript
+```stata
 
 use malm,clear
 gen year=substr(Pdwise,-4,.)

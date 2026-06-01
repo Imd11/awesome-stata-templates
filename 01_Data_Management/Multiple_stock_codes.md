@@ -16,7 +16,7 @@ Stock code Latest disclosure date Start time
 
 
 
-```javascript
+```stata
 use ss, clear
 gen multiple_stocks = strpos(stock code, ",") > 0
 split stock code, parse(",") generate(stock code)
@@ -48,7 +48,7 @@ Statistics deadline
 2010-12-31
 2011-12-31
 
-```javascript
+```stata
 gen year = substr(statistical deadline, 1, 4)
 destring year, replace
 ```
@@ -57,7 +57,7 @@ destring year, replace
 
 This is a date in %td format, the code is as follows
 
-```diff
+```stata
 gen year = year (announcement date)//  Year of extraction
 gen month=month(announcement date)//  Extract month
 ```

@@ -1,6 +1,6 @@
 # Vertical merge
 
-```javascript
+```stata
 // append all dta data in the working directory
 openall
 // append all dta data in the specified directory

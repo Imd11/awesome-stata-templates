@@ -2,7 +2,7 @@
 
 Replace variables less than 0 variables with the previous period
 
-```javascript
+```stata
 foreach var of varlist new* {       // Keep variables less than 0
     qui summarize `var'
     local min = r(min)
@@ -19,14 +19,14 @@ foreach var of varlist new* {
 
 If the Postal and Telecommunications Bureau is missing at the end of 2017 and subsequent years, it will be replaced by the data lagged 5 periods of this variable by randomly adding or subtracting 2;
 
-```javascript
+```stata
 // If the post office is missing at the end of the year, replace it with the lag of 5 periods of the variable, randomly adding or subtracting 2 by 2.
 replace year-end post and telecommunications office = l5. year-end post and telecommunications office + 4 * round(runiform()) - 2 if year-end post and telecommunications office ==.
 ```
 
 Stata removes variables containing missing values
 
-```javascript
+```stata
 foreach var of var _all {
     qui sum `var', meanonly
     if r(N) > 0  drop `var'
@@ -35,7 +35,7 @@ foreach var of var _all {
 
 Variable name case:
 
-```javascript
+```stata
 // Get all variable names
 unab vars: _all
 // Change all variable names to uppercase
@@ -50,7 +50,7 @@ rename TIMESTAMP timestamp
 
 Replace Beijing City with Beijing
 
-```javascript
+```stata
 replace province = subinstr(province, "autonomous region", "", .)
 replace province = subinstr(province, "city", "", .)
 replace province = subinstr(province, "province", "", .)
@@ -73,7 +73,7 @@ householdID
 010104101
 010104101
 
-```diff
+```stata
 * Check the length of householdID, if it is only 9 digits, add 0 at the end
 
 * 1. Generate a new variable to store the modified householdID
@@ -95,7 +95,7 @@ ID
 010104101001
 010104101002
 
-```diff
+```stata
 * Extract the last digit of each ID
 
 * 1. Generate a new variable to store the last digit of each ID
@@ -107,7 +107,7 @@ list ID last_digit, clean
 
 ## Column merge
 
-```diff
+```stata
 gen dynamic relative indicator 1 = string(dynamic relative indicator, "%9.2f") + "%"
 ```
 

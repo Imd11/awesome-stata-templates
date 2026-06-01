@@ -1,6 +1,6 @@
 # Various loops
 
-```javascript
+```stata
 *Retain variables "new_*" whose minimum value is less than 0
 
 foreach var of varlist new* {
@@ -14,7 +14,7 @@ foreach var of varlist new* {
 
 
 
-```javascript
+```stata
 foreach city of varlist Beijing-Urumqi {
 gen treat_`city' = self-created district policy year if city == "`city'"
 }  // Equivalent to first_year
@@ -44,7 +44,7 @@ foreach var of varlist activate_Beijing-activate_Urumqi {
 
 
 
-```javascript
+```stata
 forval i=2000/2021 {
     gen lnD2_`i'=lnD2*(year==`i')
 }
@@ -62,7 +62,7 @@ Province_Number of landline telephones per 100 people per year
 Province_Number of telephones per 10,000 people
 For each item, generate a new variable z* and write a loop (double loop nesting)
 
-```javascript
+```stata
 local vars "Number of Internet users nationwide. National telecommunications business revenue in 10,000 yuan. Tens of thousands of fixed-line users nationwide. Tens of thousands of mobile phone users nationwide."
 local factors "Province_number of post and telecommunications offices at the end of the year Province_number of telephone sets at the end of the year Province_total postal and telecommunications business at the end of the year 10,000 Yuan Province_number of post offices per million people per year Province_number of fixed telephones per 100 people per year Province_number of telephone sets per 10,000 people"
 
@@ -77,7 +77,7 @@ foreach v of local vars {
 
 Stata deletes variables containing missing values ​​and specifies all variables for looping:
 
-```javascript
+```stata
 foreach var of var _all {
     qui sum `var', meanonly
     if r(N) > 0  drop `var'
@@ -88,7 +88,7 @@ foreach var of var _all {
 
 
 
-```javascript
+```stata
 Loop statement in stata
 forvalues i =8(-1)1{
  gen pre_`i'=(treatment==1&period==-`i') 

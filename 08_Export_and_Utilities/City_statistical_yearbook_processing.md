@@ -4,7 +4,7 @@
 
 data:
 
-```javascript
+```stata
 tostring administrative division code, replace
 gen province code = substr(administrative division code, 1, 2) + "0000"
 ```
