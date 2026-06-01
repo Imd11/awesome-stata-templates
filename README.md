@@ -37,6 +37,8 @@ The code is organized logically following a standard empirical research workflow
 * **`07_Advanced_Models/`** - Spatial econometrics (SDM/SAR/SEM), PCA, Factor Analysis, Entropy method, and Cluster Analysis.
 * **`08_Export_and_Utilities/`** - Quick results export (`esttab`, `outreg2`), data simulation, and automation tricks.
 
+For a file-by-file map of available templates, see [`docs/TEMPLATE_INDEX.md`](docs/TEMPLATE_INDEX.md).
+
 ## 🚀 How to Use
 
 All files are provided in Markdown (`.md`) format with `stata` code blocks. This makes it extremely easy to read the explanations directly on GitHub and copy-paste the code snippets into your Stata `.do` files.
