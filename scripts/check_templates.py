@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED_NON_STATA_FENCES = {"markdown", "text", "plain text", ""}
+ALLOWED_NON_STATA_FENCES = {"bash", "markdown", "shell", "text", "plain text", ""}
 
 
 def iter_markdown_files() -> list[Path]:
